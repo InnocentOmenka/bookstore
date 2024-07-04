@@ -2,12 +2,13 @@ package com.bookstore.springbootrestfulwebservices.model.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
-@Setter
-@Getter
+@Table(name = "author")
 public class Author {
 
     @Id
